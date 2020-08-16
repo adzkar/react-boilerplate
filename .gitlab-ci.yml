@@ -1,0 +1,20 @@
+image: node:12.5.0
+
+stages:
+- build
+- eslint
+
+cache:
+  paths:
+  - node_modules/
+
+install_dependencies:
+  stage: build
+  script:
+  - node --version
+  - npm install
+
+eslintTest:
+  stage: eslint
+  script:
+    - npm run lint

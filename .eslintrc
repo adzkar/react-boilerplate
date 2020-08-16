@@ -1,0 +1,39 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    "window": true,
+    "global": true,
+    "document": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018
+  },
+  "plugins": ["react", "react-hooks"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "react/display-name": [0, { "ignoreTranspilerName": true }],
+    "no-console": ["warn"],
+    "max-len": ["warn", 120],
+    "no-unused-vars": "off",
+    "no-mixed-spaces-and-tabs": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}

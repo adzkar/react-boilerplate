@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+node_modules
+.next
+serviceWorker.js
+package-lock.json
+package.json
+build
+public
